@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Academic staff guide</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="css/mystaff.css" rel="stylesheet" type="text/css"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                $("#btnlogout").click(function() {
+                 location.replace("/");
+                });
+                
+                $("#tbl_open_jobs").DataTable( {
+                   "info": false,
+                   "paging": false,
+                   "searching":false,
+                   "scrollY": "150px",
+                   "scrollCollapse": true
+                });
+                $("#tbl_approvals").DataTable( {
+                   "info": false,
+                   "paging": false,
+                   "searching":false,
+                   "scrollY": "150px",
+                   "scrollCollapse": true
+                });
+                
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h2>Hello, Prof John Smith!<span class="small"> - [academic]</span></h2>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="panel panel-primary">
+                <div class="panel-heading pull-left">
+                    Quick links
+                </div>
+                <div class="panel-body">
+                    <div class="row display-table">
+                        <div class="col-md-1 display-cell"><a href="http://abc.net.au" target="_blank" class="btn btn-default">abc.net.au</a></div>
+                        <div class="col-md-1 display-cell"><a href="https://scholar.google.com.au/" target="_blank" class="btn btn-default">Google Scholar</a></div>
+                        <div class="col-md-1 display-cell"><a href="https://horus.anu.edu.au" target="_blank" class="btn btn-default">HORUS</a></div>
+                        <div class="col-md-1 display-cell"><a href="https://wattle.anu.edu.au/" target="_blank" class="btn btn-default">Wattle</a></div>
+                        <div class="col-md-3 display-cell"><a href="https://jr.chemwatch.net/chemwatch.web/sso/login?domain=anu" target="_blank" class="btn btn-default">Chemical Management System</a></div>
+                        <div class="col-md-1 display-cell"><a href="https://eforms.anu.edu.au" target="_blank" class="btn btn-default">ANU eForms</a></div>
+                        <div class="col-md-1 display-cell"><a href="#"><span  class="glyphicon glyphicon-plus"></span></a></div>
+                        <div class="col-md-3 display-cell">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">   
+            <div class="panel panel-primary">
+                <div class="panel-heading pull-left">
+                    What do you want to do?
+                </div>
+                <div class="panel-body mydiv">
+                    <div class="row row-grid"></div>
+                    <div class="row text-left row-grid">
+                        <div class="col-md-3"><a href="#" class="btn btn-default myOneHundred">Request a new computer <span class="glyphicon glyphicon-question-sign"></span></a></div>
+                        <div class="col-md-3"><a href="l3_travel.html" class="btn btn-default myOneHundred">Apply for travel <span data-toggle="tooltip" class="glyphicon glyphicon-question-sign" title="Prepare documents and budgets for travel expenses"></span></a></div>
+                        <div class="col-md-3"><a href="#" class="btn btn-default myOneHundred">Report a computer issue <span class="glyphicon glyphicon-question-sign"></span></a></div>
+                        <div class="col-md-3"><a href="http://horus.anu.edu.au" target="_blank" class="btn btn-default myOneHundred">Check/Apply for leave <span class="glyphicon glyphicon-question-sign"></span></a></div>
+                    </div>
+                    <div class="row text-left row-grid">
+                        <div class="col-md-3"><a href="#" class="btn btn-default myOneHundred">Report a building issue <span class="glyphicon glyphicon-question-sign"></span></a></div>
+                        <div class="col-md-3"><input class="btn btn-default myOneHundred" type="button" value="Clear my purchase card"></div>
+                        <div class="col-md-3"><input class="btn btn-default myOneHundred" type="button" value="Apply for a grant"></div>
+                        <div class="col-md-3"><input class="btn btn-default myOneHundred" type="button" value="Submit a reimbursement"></div>
+                    </div>
+                    <div class="row text-left row-grid">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"><a href="#" class="btn btn-default myOneHundred">Invite a visitor <span class="glyphicon glyphicon-question-sign"></span></a></div>
+                        <div class="col-md-3"><a href="#" class="btn btn-default myOneHundred">Access my financial reports <span class="glyphicon glyphicon-question-sign"></span></a></div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Open requests<span class="badge pull-right">3</span></div>
+                        <div class="panel-body">
+                            <table id="tbl_open_jobs" class="responsive hover stripe compact" cellspacing="0" width="100%">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <td>System</td>
+                                    <td>Job</td>
+                                    <td>Date</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Service Now</td>
+                                    <td>New PC</td>
+                                    <td>2017/07/20</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Now</td>
+                                    <td>Equipment repair</td>
+                                    <td>2017/08/10</td>
+                                </tr>
+                                <tr>
+                                    <td>Workbooks</td>
+                                    <td>New software</td>
+                                    <td>2017/07/27</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Approvals<span class="badge pull-right">7</span></div>
+                        <div class="panel-body">
+                            <table id="tbl_approvals" class="responsive hover stripe compact" cellspacing="0" width="100%">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <td>Type</td>
+                                    <td>Number</td>
+                                    <td>Date</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Travel</td>
+                                    <td>U1357975 Amber Harrison</td>
+                                    <td class="bg-warning">2017/09/22</td>
+                                </tr>
+                                <tr>
+                                    <td>Purchase Card</td>
+                                    <td>U2468086 Stewart Little</td>
+                                    <td class="bg-danger">2017/08/05</td>
+                                </tr>
+                                <tr>
+                                    <td>Leave</td>
+                                    <td>U1234567 Peter Small</td>
+                                    <td>2017/10/15</td>
+                                </tr>
+                                <tr>
+                                    <td>Leave</td>
+                                    <td>U9876543 Jane Harrison</td>
+                                    <td>2018/01/03</td>
+                                </tr>
+                                <tr>
+                                    <td>Project Review</td>
+                                    <td>U1597531 Ian Harris</td>
+                                    <td class="bg-danger">2017/08/12</td>
+                                </tr>
+                                <tr>
+                                    <td>PDR</td>
+                                    <td>U2588522 Matthew Haydon</td>
+                                    <td>2017/11/15</td>
+                                </tr>
+                                <tr>
+                                    <td>New Starter</td>
+                                    <td>Alise Gilchrist</td>
+                                    <td class="bg-danger">2017/08/01</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+        <input class="btn btn-default" type="button" id="btnlogout" value="Logout">
+        </div>
+
+    </body>
+</html>

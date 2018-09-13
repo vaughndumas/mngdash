@@ -1,0 +1,56 @@
+.display-table{
+    display: table;
+    table-layout: fixed;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.mydiv {
+
+}
+
+.myOneHundred {
+    width:  100%;
+}
+
+.glyph_topright {
+        display: inline-block;
+        position: absolute;
+        background-color: #FFFFFF;
+        right: 0.6em;
+        top: -0.25em;
+}
+.glyph_topright_nt {
+        display: inline-block;
+        position: absolute;
+        right: 0.6em;
+        top: -0.25em;
+}
+
+.row-grid + .row-grid {
+    margin-top: 3px;
+}
+
+.row.row-grid [class*="col-"] + [class*="col-"] {
+    margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+    .row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 992px) {
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"] {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+    .row.row-grid [class*="col-sm-"] + [class*="col-sm-"] {
+        margin-top: 0;
+    }
+}
